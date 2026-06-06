@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coherence-auditor"
+version = "0.1.0"
+description = "Probe an LLM's stated probabilities for sum/product-rule violations and price each violation as a Dutch book."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.39"]
+mcp = ["mcp>=1.0"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+coherence-auditor-mcp = "coherence_auditor.mcp_server:main"
+
+[tool.setuptools]
+packages = ["coherence_auditor"]
