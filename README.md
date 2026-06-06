@@ -1,5 +1,7 @@
 # coherence-auditor
 
+[![tests](https://github.com/New1Direction/coherence-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/New1Direction/coherence-auditor/actions/workflows/ci.yml)
+
 Probe an LLM's stated probabilities for violations of the **sum and product
 rules**, and turn every violation into a **Dutch book** — an explicit set of
 bets, each priced at the model's *own* stated probability, that guarantees the
